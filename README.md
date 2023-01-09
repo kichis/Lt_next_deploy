@@ -1,3 +1,2 @@
-# 説明
-
-Next.jsアプリをAWSにデプロイする検証のためのPJT
+# Lt_next_deploy
+Next.jsアプリをAWSにデプロイする検証のためのレポジトリ
