@@ -1,0 +1,2 @@
+# Lt_next_deploy
+Next.jsアプリをAWSにデプロイする検証のためのレポジトリ
