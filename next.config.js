@@ -12,6 +12,11 @@ module.exports = withPlugins([
   // ],
   {
     reactStrictMode: true,
+    // next/image WITH 3rd party image optimization
+    // images: {
+    //   loader: 'custom',
+    //   loaderFile: './loader.js',
+    // },
     // next/image WITH unoptimized
     // images: {
     //   unoptimized: true,
