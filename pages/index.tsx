@@ -27,14 +27,22 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               By{' '}
-              <h3 style={{color:'blue'}}>imgタグを使用した画像：たぬきフェイス！</h3>
+              {/* img by next - optimized - images  */}
+              {/* <h3 style={{ color: 'blue' }}>next-optimized-images とimgタグ：たぬきフェイス！</h3>
               <img
                 src="/tanuki_face.png"
                 alt="Tanuki face!"
                 className={styles.vercelLogo}
                 width={100}
                 height={100}
-              /> {/* img by next - optimized - images  */}
+              /> */}
+              {/* img WITHOUT next - optimized - images */}
+              <h3 style={{ color: 'blue' }}>next-optimized-imagesを使用せずにimgタグ：たぬきフェイス！</h3>
+              <img
+                src="/tanuki_face.png"
+                alt="Tanuki face!"
+                className={styles.vercelLogo}
+              />
               {/* <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
