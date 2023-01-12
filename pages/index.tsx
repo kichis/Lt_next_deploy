@@ -27,35 +27,43 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               By{' '}
-              <Image
+              <h3 style={{color:'blue'}}>imgタグを使用した画像：たぬきフェイス！</h3>
+              <img
+                src="/tanuki_face.png"
+                alt="Tanuki face!"
+                className={styles.vercelLogo}
+                width={100}
+                height={100}
+              /> {/* img by next - optimized - images  */}
+              {/* <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
                 height={24}
                 priority
-              />
+              /> */}
             </a>
           </div>
         </div>
 
         <div className={styles.center}>
-          <Image
+          {/* <Image
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
             priority
-          />
+          /> */}
           <div className={styles.thirteen}>
-            <Image
+            {/* <Image
               src="/thirteen.svg"
               alt="13"
               width={40}
               height={31}
               priority
-            />
+            /> */}
           </div>
         </div>
 
