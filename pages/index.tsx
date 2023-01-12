@@ -36,13 +36,26 @@ export default function Home() {
                 width={100}
                 height={100}
               /> */}
+
+              {/* next/image WITH unoptimized */}
+              <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ：葉っぱのせ！たぬき</h3>
+              <Image
+                src="/leaf_tanuki.png"
+                alt="Tanuki with happa!"
+                width={100}
+                height={100}
+                className={styles.vercelLogo}
+              />
+
               {/* img WITHOUT next - optimized - images */}
-              <h3 style={{ color: 'blue' }}>next-optimized-imagesを使用せずにimgタグ：たぬきフェイス！</h3>
+              {/* <h3 style={{ color: 'blue' }}>next-optimized-imagesを使用せずにimgタグ：たぬきフェイス！</h3>
               <img
                 src="/tanuki_face.png"
                 alt="Tanuki face!"
                 className={styles.vercelLogo}
-              />
+              /> */}
+
+
               {/* <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"

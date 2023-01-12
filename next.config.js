@@ -12,5 +12,9 @@ module.exports = withPlugins([
   // ],
   {
     reactStrictMode: true,
+    // next/image WITH unoptimized
+    images: {
+      unoptimized: true,
+    }
   }
 ]);
