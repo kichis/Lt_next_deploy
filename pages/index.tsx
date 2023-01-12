@@ -38,13 +38,24 @@ export default function Home() {
               /> */}
 
               {/* next/image WITH unoptimized */}
-              <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ：葉っぱのせ！たぬき</h3>
+              {/* <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ：葉っぱのせ！たぬき</h3>
               <Image
                 src="/leaf_tanuki.png"
                 alt="Tanuki with happa!"
                 width={100}
                 height={100}
                 className={styles.vercelLogo}
+              /> */}
+
+              {/* next/image WITH fake loader */}
+              <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ(fake loader)：葉っぱのせ！たぬき</h3>
+              <Image
+                src="/leaf_tanuki.png"
+                alt="Tanuki with happa!"
+                width={100}
+                height={100}
+                className={styles.vercelLogo}
+                loader={({ src }) => src}
               />
 
               {/* img WITHOUT next - optimized - images */}
