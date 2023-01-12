@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  // Next.jsのv11だと<img>タグを使用するのに下記の記述が必要
+  "rules": {
+    "@next/next/no-img-element": "off"
+  }
 }
