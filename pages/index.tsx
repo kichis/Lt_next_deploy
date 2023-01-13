@@ -6,6 +6,8 @@ import styles from '../styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  // サブディレクトリデプロイの検証用のなんちゃって環境変数
+  const ENV = 'production'
   return (
     <>
       <Head>
@@ -48,7 +50,7 @@ export default function Home() {
               /> */}
 
               {/* next/image WITH fake loader */}
-              <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ(fake loader)：葉っぱのせ！たぬき</h3>
+              {/* <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ(fake loader)：葉っぱのせ！たぬき</h3>
               <Image
                 src="/leaf_tanuki.png"
                 alt="Tanuki with happa!"
@@ -56,7 +58,7 @@ export default function Home() {
                 height={100}
                 className={styles.vercelLogo}
                 loader={({ src }) => src}
-              />
+              /> */}
 
               {/* img WITHOUT next - optimized - images */}
               {/* <h3 style={{ color: 'blue' }}>next-optimized-imagesを使用せずにimgタグ：たぬきフェイス！</h3>
@@ -65,6 +67,18 @@ export default function Home() {
                 alt="Tanuki face!"
                 className={styles.vercelLogo}
               /> */}
+
+              {/* next/image WITH fake loader + sub_dir solution */}
+              <h3 style={{ color: 'blue' }}>サブディレクトリでも表示したい！：葉っぱのせ！たぬき</h3>
+              <Image
+                src={`${ENV === 'production' && '/next'}/leaf_tanuki.png`}
+                alt="Tanuki with happa!"
+                width={100}
+                height={100}
+                className={styles.vercelLogo}
+                loader={({ src }) => src}
+              />
+
 
 
               {/* <Image
