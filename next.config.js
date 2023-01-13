@@ -24,6 +24,14 @@ module.exports = withPlugins([
     // next/image WITH fake loader
     images: {
       loader: 'custom',
-    }
+    },
+    // To make sub_directory deploy works
+    assetPrefix: '/next',
+    // rewrites() {
+    //   return [
+    //     { source: '/next/_next/:path*', destination: '/_next/:path*' }
+    //   ]
+    // }
+
   }
 ]);
