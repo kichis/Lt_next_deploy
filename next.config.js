@@ -25,13 +25,9 @@ module.exports = withPlugins([
     images: {
       loader: 'custom',
     },
-    // To make sub_directory deploy works
+    // To make sub_directory deploy works(for css, js files)
     assetPrefix: '/next',
-    // rewrites() {
-    //   return [
-    //     { source: '/next/_next/:path*', destination: '/_next/:path*' }
-    //   ]
-    // }
+
 
   }
 ]);
