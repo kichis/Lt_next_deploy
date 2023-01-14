@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,14 +41,15 @@ export default function Home() {
               /> */}
 
               {/* next/image WITH unoptimized */}
-              {/* <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ：葉っぱのせ！たぬき</h3>
+              <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ：葉っぱのせ！たぬき</h3>
               <Image
                 src="/leaf_tanuki.png"
                 alt="Tanuki with happa!"
                 width={100}
                 height={100}
                 className={styles.vercelLogo}
-              /> */}
+                priority
+              />
 
               {/* next/image WITH fake loader */}
               {/* <h3 style={{ color: 'blue' }}>画像最適化せずにImageタグ(fake loader)：葉っぱのせ！たぬき</h3>
@@ -69,7 +71,7 @@ export default function Home() {
               /> */}
 
               {/* next/image WITH fake loader + sub_dir solution */}
-              <h3 style={{ color: 'blue' }}>サブディレクトリでも表示したい！：葉っぱのせ！たぬき</h3>
+              {/* <h3 style={{ color: 'blue' }}>サブディレクトリでも表示したい！：葉っぱのせ！たぬき</h3>
               <Image
                 src={`${ENV === 'production' && '/next'}/leaf_tanuki.png`}
                 alt="Tanuki with happa!"
@@ -77,9 +79,7 @@ export default function Home() {
                 height={100}
                 className={styles.vercelLogo}
                 loader={({ src }) => src}
-              />
-
-
+              /> */}
 
               {/* <Image
                 src="/vercel.svg"
@@ -92,6 +92,22 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        <Link href="/non-dynamic">
+          動的じゃないルーティング
+        </Link>
+
+        <Link href='dynamic/1'>
+          <h4>動的ルーティング：１</h4>
+        </Link>
+
+        <Link href='dynamic/2'>
+          <h4>動的ルーティング：２</h4>
+        </Link>
+
+        <Link href='dynamic/3'>
+          <h4>動的ルーティング：３</h4>
+        </Link>
 
         <div className={styles.center}>
           {/* <Image

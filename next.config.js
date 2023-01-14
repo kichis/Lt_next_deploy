@@ -18,15 +18,15 @@ module.exports = withPlugins([
     //   loaderFile: './loader.js',
     // },
     // next/image WITH unoptimized
-    // images: {
-    //   unoptimized: true,
-    // }
-    // next/image WITH fake loader
     images: {
-      loader: 'custom',
+      unoptimized: true,
     },
+    // next/image WITH fake loader
+    // images: {
+    //   loader: 'custom',
+    // },
     // To make sub_directory deploy works(for css, js files)
-    assetPrefix: '/next',
+    // assetPrefix: '/next',
 
 
   }
