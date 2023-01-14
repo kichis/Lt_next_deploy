@@ -43,3 +43,6 @@ https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-pref
 __publicフォルダ内のファイル__
 - next.config.jsのassetPrefixではプリフィクスは追加されない。
 - 環境変数などを使用して自前でプリフィクスを差し込む。
+
+
+## 3. 動的ルーティング
